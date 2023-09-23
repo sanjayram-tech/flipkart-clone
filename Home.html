@@ -5,6 +5,18 @@
             flipkart clone
         </title>
         <link rel="stylesheet" href="index.css"/>
+        <script>
+           
+         //   <!-- const buttonLeft = document.getElementsByClassName('scroll-right'); -->
+
+         // document.getElementById("scroll-right").onclick = () => {
+           // document.getElementBy("scroll").scrollLeft += 100;
+            //console.log("clicked")
+           // }; 
+           // <!-- buttonLeft.onclick = function () {
+           // document.getElementsById('scroll').scrollLeft -= 20;
+            //}; -->
+        </script>
     </head>
     <body> 
         <header>
@@ -77,62 +89,499 @@
                 <div class="products-img-container">
                     <a>
                         <img src="images/products/grocery.webp"/>
-                        <span>Grocery</span>
+                        <div id="dropdown-heading">Grocery</div>
                     </a>
                 </div>
                 <div class="products-img-container">
                     <a>
                         <img src="images/products/mobiles.png"/>
-                        <span>Mobiles</span>
+                        <div id="dropdown-heading">Mobiles</div>
                     </a>
                 </div>
                 <div class="products-img-container">
                     <a>
                         <img src="images/products/fashion.png"/>
                         <div id="dropdown-heading">Fashion
-                            <img src="images/expand.svg"/>
+                            <img class="expand-logo" src="images/expand.svg"/>
                         </div>
                     </a>
                 </div>
                 <div class="products-img-container">
                     <a>
                         <img src="images/products/electronics.webp"/>
-                        <span>Electronics</span>
+                        <div id="dropdown-heading">Electronics
+                            <img class="expand-logo" src="images/expand.svg"/>
+                        </div>
                     </a>
                 </div>
                 <div class="products-img-container">
                     <a>
                         <img src="images/products/homeFurniture.webp"/>
-                        <span>Home & Furniture</span>
+                        <div id="dropdown-heading">Home & Furniture
+                            <img class="expand-logo" src="images/expand.svg"/>
+                        </div>
                     </a>
                 </div>
                 <div class="products-img-container">
                     <a>
                         <img src="images/products/appliances.webp"/>
-                        <span>Appliances</span>
+                        <div id="dropdown-heading">Appliances</div>
                     </a>
                 </div>
                 <div class="products-img-container">
                     <a>
                         <img src="images/products/travel.webp"/>
-                        <span>Travel</span>
+                        <div id="dropdown-heading">Travel</div>
                     </a>
                 </div>
                 <div class="products-img-container">
                     <a>
                         <img src="images/products/beautyToys.webp"/>
-                        <span>Beauty , Toys & more</span>
+                        <div id="dropdown-heading">Beauty , Toys & more
+                            <img class="expand-logo" src="images/expand.svg"/>
+                        </div>
 
                     </a>
                 </div>
                 <div class="products-img-container">
                     <a>
                         <img src="images/products/twoWheelers.webp"/>
-                        <span>Two Wheelers</span>
+                        <div id="dropdown-heading">Two Wheelers
+                            <img class="expand-logo" src="images/expand.svg"/>
+                        </div>
                     </a>
                 </div>
             </div>
+            <div>
+                <div  class="items-container">
+                    <a>
+                        <div class="item-heading">
+                            <div class="item-title">
+                                Best of Electronics
+                            </div>
+                            <div class="into-button-container">
+                                <button class="into">
+                                    <img class="expand-logo" src="images/expand.svg">
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="items" id = "scroll">
+                        <a>
+                            <div class="item">
+                                <div class="item-img-container">
+                                    <img id="item-img"src="images/electronics/monitor.jpeg">
+                                </div>
+                                <div class="product-name">Monitors</div>
+                                <div class="price">&#x20B9 9999</div>
+                            </div>
+                        </a>
+                        <a>
+                            <div class="item">
+                                <div class="item-img-container">
+                                    <img id="item-img" src="images/electronics/printer.jpeg" >
+                                </div>
+                                <div class="product-name">printer</div>
+                                <div class="price">&#x20B9 2500</div>
+                            </div>
+                        </a>
+                        <a>
+                            <div class="item">
+                                <div class="item-img-container">
+                                    <img id="item-img"src="images/electronics/earphones.jpeg">
+                                </div>
+                                <div class="product-name">earphones</div>
+                                <div class="price">&#x20B9 1000</div>
+                            </div>
+                        </a>
+                        <a>
+                            <div class="item">
+                                <div class="item-img-container">
+                                    <img id="item-img"src="images/electronics/keyboard.png">
+                                </div>
+                                <div class="product-name">keyboard</div>
+                                <div class="price">&#x20B9 2500</div>
+                            </div>
+                        </a>
+                        <a>
+                            <div class="item" >
+                                <div class="item-img-container">
+                                    <img id="item-img"src="images/electronics/speaker.jpeg">
+                                </div>
+                                <div class="product-name">Speaker</div>
+                                <div class="price">&#x20B9 1500</div>
+                            </div>
+                        </a>
+                        <a>
+                            <div class="item">
+                                <div class="item-img-container">
+                                    <img id="item-img"src="images/electronics/printer2.jpeg">
+                                </div>
+                                <div class="product-name">Printer</div>
+                                <div class="price">&#x20B9 2999</div>
+                            </div>
+                        </a>
+                        <a>
+                            <div class="item">
+                                <div class="item-img-container">
+                                    <img id="item-img"src="images/electronics/mouse.jpeg">
+                                </div>
+                                <div class="product-name">Mouse</div>
+                                <div class="price">&#x20B9 999</div>
+                            </div>
+                        </a>
+                        <a>
+                            <div class="item">
+                                <div class="item-img-container">
+                                    <img id="item-img"src="images/electronics/keyboard.png">
+                                </div>
+                                <div class="product-name">Keyboard</div>
+                                <div class="price">&#x20B9 3000</div>
+                            </div>
+                        </a>
+                    </div>
+                    <button id="scroll-right" type="button">
+                        <img src="images/expand.svg"/>
+                    </button>
+                </div>
+            </div>
+
         </div>
+        <div  class="items-container">
+            <a>
+                <div class="item-heading">
+                    <div class="item-title">
+                        Beauty,Food,Toys & more
+                    </div>
+                    <div class="into-button-container">
+                        <button class="into">
+                            <img class="expand-logo" src="images/expand.svg">
+                        </button>
+                    </div>
+                </div>
+            </a>
+            <div class="items" id = "scroll">
+                <a>
+                    <div class="item">
+                        <div class="item-img-container">
+                            <img id="item-img"src="images/beauty/almond.jpeg">
+                        </div>
+                        <div class="product-name">almond</div>
+                        <div class="price">&#x20B9 250</div>
+                    </div>
+                </a>
+                <a>
+                    <div class="item">
+                        <div class="item-img-container">
+                            <img id="item-img"src="images/beauty/batman.jpeg">
+                        </div>
+                        <div class="product-name">batman</div>
+                        <div class="price">&#x20B9 500</div>
+                    </div>
+                </a>
+                <a>
+                    <div class="item">
+                        <div class="item-img-container">
+                            <img id="item-img"src="images/beauty/binge.jpeg">
+                        </div>
+                        <div class="product-name">binge</div>
+                        <div class="price">&#x20B9 1500</div>
+                    </div>
+                </a>
+                <a>
+                    <div class="item">
+                        <div class="item-img-container">
+                            <img id="item-img"src="images/beauty/bourbon.jpeg">
+                        </div>
+                        <div class="product-name">bourbon</div>
+                        <div class="price">&#x20B9 9999</div>
+                    </div>
+                </a>
+                <a>
+                    <div class="item" >
+                        <div class="item-img-container">
+                            <img id="item-img"src="images/beauty/dryfruit.jpeg">
+                        </div>
+                        <div class="product-name">Monitors</div>
+                        <div class="price">&#x20B9 9999</div>
+                    </div>
+                </a>
+                <a>
+                    <div class="item">
+                        <div class="item-img-container">
+                            <img id="item-img"src="images/beauty/kajal.jpeg">
+                        </div>
+                        <div class="product-name">Monitors</div>
+                        <div class="price">&#x20B9 9999</div>
+                    </div>
+                </a>
+                <a>
+                    <div class="item">
+                        <div class="item-img-container">
+                            <img id="item-img"src="images/beauty/superman.jpeg">
+                        </div>
+                        <div class="product-name">Monitors</div>
+                        <div class="price">&#x20B9 9999</div>
+                    </div>
+                </a>
+                <a>
+                    <div class="item">
+                        <div class="item-img-container">
+                            <img id="item-img"src="images/beauty/lipstick.jpeg">
+                        </div>
+                        <div class="product-name">Monitors</div>
+                        <div class="price">&#x20B9 9999</div>
+                    </div>
+                </a>
+            </div>
+            <button id="scroll-right" type="button">
+                <img src="images/expand.svg"/>
+            </button>
+        </div>
+    </div>
+    <div class="cards-container">
+        <div class="card">
+            <a>
+                <div class="item-heading">
+                    <div class="item-title">
+                        Best of Electronics
+                    </div>
+                    <div class="into-button-container">
+                        <button class="into">
+                            <img class="expand-logo" src="images/expand.svg">
+                        </button>
+                    </div>
+                </div>
+            </a>
+            <div class="card-top">
+                <div class="item">
+                    <div class="item-img-container">
+                        <img id="item-img"src="images/electronics/monitor.jpeg">
+                    </div>
+                    <div class="product-name">Monitors</div>
+                    <div class="price">&#x20B9 9999</div>
+                </div>
+                <div class="item">
+                    <div class="item-img-container">
+                        <img id="item-img"src="images/electronics/monitor.jpeg">
+                    </div>
+                    <div class="product-name">Monitors</div>
+                    <div class="price">&#x20B9 9999</div>
+                </div>
+            </div>
+            <div class="card-bottom">
+                <div class="item">
+                    <div class="item-img-container">
+                        <img id="item-img"src="images/electronics/monitor.jpeg">
+                    </div>
+                    <div class="product-name">Monitors</div>
+                    <div class="price">&#x20B9 9999</div>
+                </div>
+                <div class="item">
+                    <div class="item-img-container">
+                        <img id="item-img"src="images/electronics/monitor.jpeg">
+                    </div>
+                    <div class="product-name">Monitors</div>
+                    <div class="price">&#x20B9 9999</div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <a>
+                <div class="item-heading">
+                    <div class="item-title">
+                        Best of Electronics
+                    </div>
+                    <div class="into-button-container">
+                        <button class="into">
+                            <img class="expand-logo" src="images/expand.svg">
+                        </button>
+                    </div>
+                </div>
+            </a>
+            <div class="card-top">
+                <div class="item">
+                    <div class="item-img-container">
+                        <img id="item-img"src="images/electronics/monitor.jpeg">
+                    </div>
+                    <div class="product-name">Monitors</div>
+                    <div class="price">&#x20B9 9999</div>
+                </div>
+                <div class="item">
+                    <div class="item-img-container">
+                        <img id="item-img"src="images/electronics/monitor.jpeg">
+                    </div>
+                    <div class="product-name">Monitors</div>
+                    <div class="price">&#x20B9 9999</div>
+                </div>
+            </div>
+            <div class="card-bottom">
+                <div class="item">
+                    <div class="item-img-container">
+                        <img id="item-img"src="images/electronics/monitor.jpeg">
+                    </div>
+                    <div class="product-name">Monitors</div>
+                    <div class="price">&#x20B9 9999</div>
+                </div>
+                <div class="item">
+                    <div class="item-img-container">
+                        <img id="item-img"src="images/electronics/monitor.jpeg">
+                    </div>
+                    <div class="product-name">Monitors</div>
+                    <div class="price">&#x20B9 9999</div>
+                </div>
+            </div>
+        </div>
+        <img style="width:483px;height:580px; object-fit:fill" src="images/ad.png"/>
+
+
+    </div>
+    <div class="cards-container">
+        <div class="card">
+            <a>
+                <div class="item-heading">
+                    <div class="item-title">
+                        Best of Electronics
+                    </div>
+                    <div class="into-button-container">
+                        <button class="into">
+                            <img class="expand-logo" src="images/expand.svg">
+                        </button>
+                    </div>
+                </div>
+            </a>
+            <div class="card-top">
+                <div class="item">
+                    <div class="item-img-container">
+                        <img id="item-img"src="images/electronics/monitor.jpeg">
+                    </div>
+                    <div class="product-name">Monitors</div>
+                    <div class="price">&#x20B9 9999</div>
+                </div>
+                <div class="item">
+                    <div class="item-img-container">
+                        <img id="item-img"src="images/electronics/monitor.jpeg">
+                    </div>
+                    <div class="product-name">Monitors</div>
+                    <div class="price">&#x20B9 9999</div>
+                </div>
+            </div>
+            <div class="card-bottom">
+                <div class="item">
+                    <div class="item-img-container">
+                        <img id="item-img"src="images/electronics/monitor.jpeg">
+                    </div>
+                    <div class="product-name">Monitors</div>
+                    <div class="price">&#x20B9 9999</div>
+                </div>
+                <div class="item">
+                    <div class="item-img-container">
+                        <img id="item-img"src="images/electronics/monitor.jpeg">
+                    </div>
+                    <div class="product-name">Monitors</div>
+                    <div class="price">&#x20B9 9999</div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <a>
+                <div class="item-heading">
+                    <div class="item-title">
+                        Best of Electronics
+                    </div>
+                    <div class="into-button-container">
+                        <button class="into">
+                            <img class="expand-logo" src="images/expand.svg">
+                        </button>
+                    </div>
+                </div>
+            </a>
+            <div class="card-top">
+                <div class="item">
+                    <div class="item-img-container">
+                        <img id="item-img"src="images/electronics/monitor.jpeg">
+                    </div>
+                    <div class="product-name">Monitors</div>
+                    <div class="price">&#x20B9 9999</div>
+                </div>
+                <div class="item">
+                    <div class="item-img-container">
+                        <img id="item-img"src="images/electronics/monitor.jpeg">
+                    </div>
+                    <div class="product-name">Monitors</div>
+                    <div class="price">&#x20B9 9999</div>
+                </div>
+            </div>
+            <div class="card-bottom">
+                <div class="item">
+                    <div class="item-img-container">
+                        <img id="item-img"src="images/electronics/monitor.jpeg">
+                    </div>
+                    <div class="product-name">Monitors</div>
+                    <div class="price">&#x20B9 9999</div>
+                </div>
+                <div class="item">
+                    <div class="item-img-container">
+                        <img id="item-img"src="images/electronics/monitor.jpeg">
+                    </div>
+                    <div class="product-name">Monitors</div>
+                    <div class="price">&#x20B9 9999</div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <a>
+                <div class="item-heading">
+                    <div class="item-title">
+                        Best of Electronics
+                    </div>
+                    <div class="into-button-container">
+                        <button class="into">
+                            <img class="expand-logo" src="images/expand.svg">
+                        </button>
+                    </div>
+                </div>
+            </a>
+            <div class="card-top">
+                <div class="item">
+                    <div class="item-img-container">
+                        <img id="item-img"src="images/electronics/monitor.jpeg">
+                    </div>
+                    <div class="product-name">Monitors</div>
+                    <div class="price">&#x20B9 9999</div>
+                </div>
+                <div class="item">
+                    <div class="item-img-container">
+                        <img id="item-img"src="images/electronics/monitor.jpeg">
+                    </div>
+                    <div class="product-name">Monitors</div>
+                    <div class="price">&#x20B9 9999</div>
+                </div>
+            </div>
+            <div class="card-bottom">
+                <div class="item">
+                    <div class="item-img-container">
+                        <img id="item-img"src="images/electronics/monitor.jpeg">
+                    </div>
+                    <div class="product-name">Monitors</div>
+                    <div class="price">&#x20B9 9999</div>
+                </div>
+                <div class="item">
+                    <div class="item-img-container">
+                        <img id="item-img"src="images/electronics/monitor.jpeg">
+                    </div>
+                    <div class="product-name">Monitors</div>
+                    <div class="price">&#x20B9 9999</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
 
         <footer>
             <div>

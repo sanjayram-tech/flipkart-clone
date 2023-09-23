@@ -10,12 +10,17 @@ body{
 
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
 header{
     position: fixed;
     width:100%;
     background-color: white;
     top:0;
     left:0;
+    z-index: 2;
 }
 
 a:hover{
@@ -317,17 +322,143 @@ hr{
     justify-content: center;
     align-items:center;
     background-color: white;
+    margin-bottom:10px;
 
 }
 .products-img-container{
+ 
     padding:16px;
     font-size: small;
     font-weight: bold;
+}
+
+.products-img-container:hover .expand-logo{
+    filter: sepia(100%) hue-rotate(190deg) saturate(900%);
+    transition:20ms;
+    transform: rotate(180deg);
+    animation: rotateImg 0.3s linear ;
+    
+}
+.products-img-container:hover #dropdown-heading{
+    color:#5384f0;
 }
 
 #dropdown-heading{
     display:flex;
     justify-content: center;
     align-items: center;
+ 
 }
+
+.items{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    white-space: nowrap;
+
+}
+.items::-webkit-scrollbar{
+    display: none;
+}
+
+.items-container{
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    padding-left:10px;
+    margin-bottom:10px;
+    padding-bottom: 10px;
+   
+}
+
+.item-heading{
+    display:flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding:16px;
+    padding-left:8px;
+
+}
+
+.item-title{
+    flex:4;
+}
+
+.item{
+    border:solid 0.8px #878787;
+    border-radius: 8px;
+    display:flex;
+    flex-direction: column;
+    padding:6px;
+    margin-right:20px;
+}
+
+
+.item-img-container{
+    display:flex;
+    padding-bottom:10px;
+    align-items: center;
+    
+}
+#item-img{
+    width:186px;
+    height:169px;
+    
+}
+/* #item-img:hover{
+    width:190px;
+    height:172px;
+    object-fit:fill;
+} */
+.product-name,.price{
+    display:flex;
+    justify-content:center;
+    font-size:14px;
+
+}
+
+.price{
+   
+    font-weight: 600;
+}
+
+#scroll-right{
+    position: absolute;
+    z-index: 1;
+    top:100px;
+    right: 0px;
+    height: 100px;
+    border:none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.into{
+    border:none;
+    background-color: #2a55e5;
+   border-radius: 100%;
+}
+
+.cards-container{
+    display: flex;
+    justify-content: space-between;
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom:10px;
+}
+.card{
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    padding-left: 24px;
+    padding-right: 12px;
+}
+.card-top,.card-bottom{
+    display:flex;
+    flex-direction: row;
+    padding:10px;
+    padding-bottom:5px;
+}
+
 
